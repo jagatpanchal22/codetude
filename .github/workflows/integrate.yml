@@ -34,6 +34,11 @@ jobs:
         python -m pip install --upgrade pip setuptools wheel
         pip install -r requirements.txt
     # Run the program
-    - name: Run a python scripts
+    - name: Run a python scripts for even value
+      run: python tutorials/collatz_sequence.py 10
+    - name: Run a python scripts for odd  value
+      run: python tutorials/collatz_sequence.py 11
+    - name: Run a python scripts for float input
+      run: python tutorials/collatz_sequence.py 10.25
+    - name: Run a python scripts for no input
       run: python tutorials/collatz_sequence.py
-
