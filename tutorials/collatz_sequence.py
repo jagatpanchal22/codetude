@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import argparse
+from argparse import ArgumentError
 
 def collatz(number):
     """
@@ -22,7 +23,7 @@ def main():
     print("====== Collatz Program =====")
     try:
         parser = argparse.ArgumentParser()
-        parser.add_argument("number")
+        parser.add_argument("--number")
         args = parser.parse_args()
         userInput = int(args.number)
         res = collatz(userInput)
