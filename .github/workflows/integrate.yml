@@ -35,10 +35,10 @@ jobs:
         pip install -r requirements.txt
     # Run the program
     - name: Run a python scripts for even value
-      run: python tutorials/collatz_sequence.py 10
+      run: python tutorials/collatz_sequence.py --number 10
     - name: Run a python scripts for odd  value
-      run: python tutorials/collatz_sequence.py 11
+      run: python tutorials/collatz_sequence.py --number 11
     - name: Run a python scripts for float input
-      run: python tutorials/collatz_sequence.py 10.25
-    - name: Run a python scripts for no input
-      run: python tutorials/collatz_sequence.py
+      run: python tutorials/collatz_sequence.py --number 10.25
+    - name: Run a python scripts for other value
+      run: python tutorials/collatz_sequence.py --number abc
