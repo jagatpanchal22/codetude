@@ -35,5 +35,5 @@ jobs:
         pip install -r requirements.txt
     # Run the program
     - name: Run a python scripts
-      run: python *.py
+      run: python tutorials/collatz_sequence.py
 
