@@ -1,7 +1,6 @@
 #!/usr/bin/python
 
 import argparse
-from argparse import ArgumentError
 
 def collatz(number):
     """
