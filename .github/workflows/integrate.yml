@@ -34,11 +34,11 @@ jobs:
         python -m pip install --upgrade pip setuptools wheel
         pip install -r requirements.txt
     # Run the program
-    - name: Run a python scripts for even value
-      run: python tutorials/collatz_sequence.py --number 10
-    - name: Run a python scripts for odd  value
-      run: python tutorials/collatz_sequence.py --number 11
-    - name: Run a python scripts for float input
-      run: python tutorials/collatz_sequence.py --number 10.25
-    - name: Run a python scripts for other value
-      run: python tutorials/collatz_sequence.py --number abc
+    - name: Run collatz sequence program
+      run: |
+        python tutorials/collatz_sequence.py --number 10
+        python tutorials/collatz_sequence.py --number 11
+        python tutorials/collatz_sequence.py --number 10.25
+        python tutorials/collatz_sequence.py --number abc
+    - name: Run comma code list program
+      run: python tutorials/comma_code.py
