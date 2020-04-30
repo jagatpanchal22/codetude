@@ -1,3 +1,8 @@
+#!/usr/bin/python
+
+import argparse
+from argparse import ArgumentError
+
 def collatz(number):
     """
     A Collatz sequence which checks a number is even or odd returns values according
@@ -17,7 +22,10 @@ def main():
     """
     print("====== Collatz Program =====")
     try:
-        userInput = int(input("Enter Value: "))
+        parser = argparse.ArgumentParser()
+        parser.add_argument("--number")
+        args = parser.parse_args()
+        userInput = int(args.number)
         res = collatz(userInput)
         print(res)
     except ValueError:
