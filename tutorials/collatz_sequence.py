@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Description: Function for Collatz program
+Description: Function for Collatz program   demo purpose
 """
 import argparse
 
