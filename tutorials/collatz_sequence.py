@@ -1,5 +1,7 @@
 #!/usr/bin/python
-
+"""
+Description: Function for Collatz program
+"""
 import argparse
 
 def collatz(number):
